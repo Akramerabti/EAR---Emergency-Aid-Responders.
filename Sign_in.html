@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <meta charset="UTF-8">
+    <title>EAR-Emergency</title>
+    <link rel="stylesheet" href="sign_in.css">
+    <body>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>EAR-Emergency Aid Responders
+                </a>
+                <div class="navbar__toggle" id="mobile-menu">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                         <a href="index.html" class="navbar__links">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="Causes.html" class="navbar__links">
+                            Causes
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="Donate.html" class="navbar__links">
+                            Donate
+                        </a>
+                    </li>
+                    <li class="navbar__btn">
+                    <a href="Sign_in.html" class="navbar__links">
+                            Sign In
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main__img--container">
+            <img src="logo.png" alt="pic" id="main__img">
+        </div>
+        <h1>Sign In</h1>
+	<form>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username"><br><br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password"><br><br>
+		<button type="submit" onclick="signIn()">Sign In</button>
+	</form>
+
+    <h1>Sign Up</h1>
+    <form>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+      </form>
+
+
+	<script src="script.js"></script>
+
+    </body>
+</html>
